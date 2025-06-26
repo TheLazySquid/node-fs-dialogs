@@ -2,6 +2,12 @@
 
 This library provides bindings for [nativefiledialog-extended](https://github.com/btzy/nativefiledialog-extended), which allows node.js to open native file dialogs for selecting files and directories.
 
+## Installation
+
+```bash
+npm install node-fs-dialogs
+```
+
 ## Usage
 
 ```js
