@@ -12,5 +12,4 @@ jobs:
       - uses: actions/checkout@v4
       - uses: JS-DevTools/npm-publish@v3
         with:
-          package: lib
           token: ${{ secrets.NPM_TOKEN }}
