@@ -8,6 +8,8 @@ This library provides bindings for [nativefiledialog-extended](https://github.co
 npm install node-fs-dialogs
 ```
 
+On linux you will need to have `libgtk-3-dev` and potentially `pkg-config` installed.
+
 ## Usage
 
 ```js

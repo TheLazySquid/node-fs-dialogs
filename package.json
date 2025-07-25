@@ -1,7 +1,7 @@
 {
     "name": "node-fs-dialogs",
     "description": "Cross-platform native file dialogs for Node.js",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "author": "TheLazySquid",
     "module": "index.ts",
     "main": "lib/binding.js",
@@ -9,6 +9,7 @@
     "files": [
         "lib",
         "src",
+        "scripts",
         "nfd-ext/src",
         "binding.gyp"
     ],
@@ -22,6 +23,7 @@
         "postinstall": "node-gyp rebuild"
     },
     "devDependencies": {
+        "@types/node": "^24.1.0",
         "node-gyp": "^11.2.0"
     },
     "dependencies": {
