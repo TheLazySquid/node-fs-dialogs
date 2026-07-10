@@ -38,12 +38,18 @@ console.log(file); // "/path/to/file", or null if canceled
 |options.filter[i].name|string|The name of the filter, shown in the dialog.|
 |options.filter[i].extensions|string \| string[]|The file extensions to filter by. Can be a comma-seperated string or an array of strings.|
 |options.defaultPath?|string|The default path to open the dialog in. On windows the user's last used path will override this.|
+|options.title?|string|The title of the picker dialog.|
+|options.acceptLabel?|string|The text on the dialog's accept button.|
+|options.cancelLabel?|string|The text on the dialog's cancel button.|
 
 #### `pickDirectory(options?: PickDirectoryOptions): Promise<string | null>`
 #### `pickDirectories(options?: PickDirectoryOptions): Promise<string[] | null>`
 |Parameter|Type|Description|
 |---|---|---|
 |options.defaultPath?|string|The default path to open the dialog in. On windows the user's last used path will override this.|
+|options.title?|string|The title of the picker dialog.|
+|options.acceptLabel?|string|The text on the dialog's accept button.|
+|options.cancelLabel?|string|The text on the dialog's cancel button.|
 
 #### `pickSaveFile(options?: PickSaveFileOptions): Promise<string | null>`
 |Parameter|Type|Description|
@@ -53,3 +59,6 @@ console.log(file); // "/path/to/file", or null if canceled
 |options.filter[i].extensions|string \| string[]|The file extensions to filter by. Can be a comma-seperated string or an array of strings.|
 |options.defaultPath?|string|The default path to open the dialog in. On windows the user's last used path will override this.|
 |options.defaultName?|string|The default name of the file.|
+|options.title?|string|The title of the picker dialog.|
+|options.acceptLabel?|string|The text on the dialog's accept button.|
+|options.cancelLabel?|string|The text on the dialog's cancel button.|
