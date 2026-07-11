@@ -1,7 +1,7 @@
 {
     "name": "node-fs-dialogs",
     "description": "Cross-platform native file dialogs for Node.js",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "author": "TheLazySquid",
     "module": "index.ts",
     "main": "lib/binding.js",

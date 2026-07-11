@@ -5,7 +5,7 @@
             'defines': [ 'NAPI_DISABLE_CPP_EXCEPTIONS' ],
             'sources': [
                 'src/dialogs.cc',
-                "<!@(node -p \"process.platform === 'win32' ? 'nfd-ext/src/nfd_win.cpp' : ''\")"
+                "<!@(node -p \"'nfd-ext/src/nfd_' + (process.platform === 'win32' ? process.platform === 'darwin' ? 'cocoa.m' : 'win.cpp' : 'gtk.cpp')\")"
             ],
             'include_dirs': [
                 "<!@(node -p \"require('node-addon-api').include\")",
