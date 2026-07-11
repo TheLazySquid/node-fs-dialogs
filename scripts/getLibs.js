@@ -1,6 +1,6 @@
 const { execSync } = require("child_process");
 
-if(process.platform === "linux") {
+if(process.platform === "linux" || process.platform === "darwin") {
     try {
         const libs = execSync(`pkg-config --libs gtk+-3.0`).toString().trim();
         

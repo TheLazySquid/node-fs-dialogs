@@ -9,13 +9,13 @@
             'include_dirs': [
                 "<!@(node -p \"require('node-addon-api').include\")",
                 "nfd-ext/src/include",
-                "<!@(node scripts/getLinuxIncludes.js)",
+                "<!@(node scripts/getIncludes.js)",
             ],
             'dependencies': ["<!(node -p \"require('node-addon-api').gyp\")"],
             'cflags!': [ '-fno-exceptions', '-Wno-missing-field-initializers' ],
             'cflags_cc!': [ '-fno-exceptions', '-Wno-missing-field-initializers' ],
             'libraries': [
-                "<!@(node scripts/getLinuxLibs.js)"
+                "<!@(node scripts/getLibs.js)"
             ],
             'msvs_settings': {
                 'VCCLCompilerTool': { 'ExceptionHandling': 1 },
