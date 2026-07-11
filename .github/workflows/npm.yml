@@ -33,7 +33,7 @@ jobs:
 
       - name: Install macOS dependencies
         if: matrix.os == 'macos-latest'
-        run: brew install gtk+3
+        run: brew install gtk+3 pkgconfig
 
       - name: Install Dependencies
         run: npm install --ignore-scripts
