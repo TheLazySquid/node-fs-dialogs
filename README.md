@@ -34,9 +34,9 @@ console.log(file); // "/path/to/file", or null if canceled
 #### `pickFiles(options?: PickFileOptions): Promise<string[] | null>`
 |Parameter|Type|Description|
 |---|---|---|
-|options.filter?|FileFilter \| FileFilter[]|Filters to apply to the file in the dialog. The user is still able to select files that do not match these filters, so you will still need to validate the file type after selection.|
-|options.filter[i].name|string|The name of the filter, shown in the dialog.|
-|options.filter[i].extensions|string \| string[]|The file extensions to filter by. Can be a comma-seperated string or an array of strings.|
+|options.filters?|FileFilter \| FileFilter[]|Filters to apply to the file in the dialog. The user is still able to select files that do not match these filters, so you will still need to validate the file type after selection.|
+|options.filters[i].name|string|The name of the filter, shown in the dialog.|
+|options.filters[i].extensions|string \| string[]|The file extensions to filter by. Can be a comma-seperated string or an array of strings.|
 |options.defaultPath?|string|The default path to open the dialog in. On windows the user's last used path will override this.|
 |options.title?|string|The title of the picker dialog.|
 |options.acceptLabel?|string|The text on the dialog's accept button.|
@@ -54,9 +54,9 @@ console.log(file); // "/path/to/file", or null if canceled
 #### `pickSaveFile(options?: PickSaveFileOptions): Promise<string | null>`
 |Parameter|Type|Description|
 |---|---|---|
-|options.filter?|FileFilter \| FileFilter[]|Filters to apply to the file the user is creating or selecting. The user is still able to create or select files that do not match these filters, so you will still need to validate the file type after selection.|
-|options.filter[i].name|string|The name of the filter, shown in the dialog.|
-|options.filter[i].extensions|string \| string[]|The file extensions to filter by. Can be a comma-seperated string or an array of strings.|
+|options.filters?|FileFilter \| FileFilter[]|Filters to apply to the file the user is creating or selecting. The user is still able to create or select files that do not match these filters, so you will still need to validate the file type after selection.|
+|options.filters[i].name|string|The name of the filter, shown in the dialog.|
+|options.filters[i].extensions|string \| string[]|The file extensions to filter by. Can be a comma-seperated string or an array of strings.|
 |options.defaultPath?|string|The default path to open the dialog in. On windows the user's last used path will override this.|
 |options.defaultName?|string|The default name of the file.|
 |options.title?|string|The title of the picker dialog.|
