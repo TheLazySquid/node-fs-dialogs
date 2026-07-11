@@ -4,7 +4,8 @@
             'target_name': 'node-fs-dialogs',
             'defines': [ 'NAPI_DISABLE_CPP_EXCEPTIONS' ],
             'sources': [
-                'src/dialogs.cc'
+                'src/dialogs.cc',
+                "<!@(node -p \"process.platform === 'win32' ? 'nfd-ext/src/nfd_win.cpp' : ''\")"
             ],
             'include_dirs': [
                 "<!@(node -p \"require('node-addon-api').include\")",
